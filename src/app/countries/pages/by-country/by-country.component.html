@@ -5,6 +5,7 @@
     <app-search-box
       (onValue)="serchByName($event)"
       (onDebounce)="serchByName($event)"
+      [initialValue]="initialValue"
       placeholder="Busqueda por Nombre"
     ></app-search-box>
   </div>
