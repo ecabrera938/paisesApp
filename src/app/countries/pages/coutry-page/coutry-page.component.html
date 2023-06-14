@@ -25,21 +25,21 @@
       <h3 class="text-center">Informacion</h3>
       <ul class="list-group">
         <li class="list-group-item">
-          <strong>Capital</strong> {{ country.capital }}
+          <strong>Capital: </strong> {{ country.capital }}
         </li>
         <li class="list-group-item">
-          <strong>Poblacion</strong> {{ country.population | number }}
+          <strong>Poblacion: </strong> {{ country.population | number }}
         </li>
         <li class="list-group-item">
-          <strong>Codigo</strong> {{ country.cca3 }}
+          <strong>Codigo: </strong> {{ country.cca3 }}
         </li>
         <li class="list-group-item">
-          <strong>Area</strong> {{ country.area | number }} km2
+          <strong>Area: </strong> {{ country.area | number }} km2
         </li>
         <li class="list-group-item">
-          <strong>Ubicacion</strong>
+          <strong>Ubicacion: </strong>
           
-          <a [href]='country.maps.googleMaps' target="_blank">Mapa</a>
+          <a [href]='country.maps.googleMaps' target="_blank">Ubicacion </a>
         </li>
       </ul>
     </div>
@@ -51,37 +51,37 @@
 
       <div class="d-flex flex-wrap">
         <span class="badge bg-primary m-1">
-          {{ country.translations["ara"]?.common }}
+          {{ country.translations["ara"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["bre"]?.common }}
+          {{ country.translations["bre"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["ces"]?.common }}
+          {{ country.translations["ces"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["cym"]?.common }}
+          {{ country.translations["cym"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["deu"]?.common }}
+          {{ country.translations["deu"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["fra"]?.common }}
+          {{ country.translations["fra"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["jpn"]?.common }}
+          {{ country.translations["jpn"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["per"]?.common }}
+          {{ country.translations["per"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["kor"]?.common }}
+          {{ country.translations["kor"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["rus"]?.common }}
+          {{ country.translations["rus"].common }}
         </span>
         <span class="badge bg-primary m-1">
-          {{ country.translations["urd"]?.common }}
+          {{ country.translations["urd"].common }}
         </span>
       </div>
     </div>

@@ -2,6 +2,7 @@
   type="text"
   [placeholder]="placeholder"
   class="form-control"
+  (keyup)="onKeyPress(txtInpput.value)"
   (keyup.enter)="emitValue(txtInpput.value)"
   #txtInpput
-/>
+  />

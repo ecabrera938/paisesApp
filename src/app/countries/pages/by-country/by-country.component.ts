@@ -13,12 +13,15 @@ export class ByCountryPageComponent {
   constructor(private CountriesService: CountriesService) {}
 
   public countries: Country[] = [];
+  public isLoading: boolean = false;
 
   serchByName(term: string): void {
-    console.log('Desde ByNAmePage');
-    console.log({ term });
+    this.isLoading = true
+    // console.log('Desde ByNAmePage');
+    // console.log({ term });
     this.CountriesService.serchName(term).subscribe((countries) => {
       this.countries = countries;
+      this.isLoading = false
     });
   }
 
